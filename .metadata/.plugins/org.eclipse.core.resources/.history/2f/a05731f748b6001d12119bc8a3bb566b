@@ -1,0 +1,16 @@
+package Assignments;
+
+public class Division extends Addition {
+	int result;
+	
+	public int sum(){
+		int sum = super.sum();
+		return sum;
+
+	}
+
+	public static void main(String[] args) {
+		Division d1 = new Division();
+	}
+
+}

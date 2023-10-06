@@ -1,0 +1,21 @@
+package Assignments;
+
+public class Hra extends Salary {
+	
+	int hra;
+	
+	public int calhra(int basicpay){
+		hra = (int) (basicpay * 0.05);
+		return hra;
+	}
+
+	public static void main(String[] args) {
+		Salary sal = new Salary();
+		int basicpay = sal.inputdata();
+		Hra h1 = new Hra();
+		
+		System.out.println(h1.calhra(basicpay));
+		
+	}
+
+}

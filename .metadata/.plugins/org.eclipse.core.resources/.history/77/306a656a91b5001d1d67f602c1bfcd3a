@@ -1,0 +1,10 @@
+package Assignments;
+
+public class Hra {
+
+	public static void main(String[] args) {
+		Salary sal = new Salary();
+		sal.inputdata();
+	}
+
+}

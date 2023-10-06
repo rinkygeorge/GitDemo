@@ -1,0 +1,43 @@
+package Assignments;
+
+import java.util.Scanner;
+
+public class Reverse {
+	static int number;
+	static int reverse = 0;
+	static int remainder;
+
+	Reverse(int number, int remainder, int reverse) {
+		
+		this();
+		this.number = number;
+		this.remainder = remainder;
+		this.reverse = reverse;
+		while (this.number > 0) {
+			this.remainder = number % 10;
+			this.reverse = reverse * 10 + this.remainder;
+			this.number = number / 10;
+		}
+		System.out.println(this.reverse);
+
+	}
+	Reverse(){
+		System.out.println("Finding Reverse");
+	}
+
+	public static int input() {
+		Scanner s1 = new Scanner(System.in);
+		System.out.println("Enter the number:");
+		int number = s1.nextInt();
+		return number;
+
+	}
+
+	public static void main(String[] args) {
+
+		int number = input();
+		Reverse r1 = new Reverse(number, reverse, remainder);
+
+	}
+
+}

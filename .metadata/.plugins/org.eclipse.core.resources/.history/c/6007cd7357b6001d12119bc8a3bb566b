@@ -1,0 +1,30 @@
+package Assignments;
+
+public class Division extends Addition {
+	int result;
+	
+	
+	public int getresult(){
+		int sum = super.sum();
+		divisible(sum);
+		
+	}
+	public boolean divisible(int sum){
+		if(sum%10==0){
+		return true;
+		}
+		else{
+		return false;
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		Division d1 = new Division();
+		d1.getresult();
+		d1.divisible();
+		System.out.println("Divisible by 10: ");
+		
+	}
+
+}

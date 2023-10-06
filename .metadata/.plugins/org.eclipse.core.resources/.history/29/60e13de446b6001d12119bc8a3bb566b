@@ -1,0 +1,15 @@
+package Assignments;
+
+public class Division extends Addition {
+	int result;
+	
+	public void getresult(){
+		System.out.println(super.sum());
+
+	}
+
+	public static void main(String[] args) {
+		
+	}
+
+}

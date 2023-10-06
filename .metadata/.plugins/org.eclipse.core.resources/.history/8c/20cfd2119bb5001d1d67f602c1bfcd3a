@@ -1,0 +1,37 @@
+package Assignments;
+
+public class TotalSalary {
+	int totalsal;
+	
+	public int totsal(int basicpay, int hra, int pf, int bonus){
+		return totalsal = basicpay+hra+pf+bonus;
+	}
+	
+	public void display(int basicpay, int deduction, int hra, int pf, int bonus, int totalsalary){
+		System.out.println("Salary Slip");
+		System.out.println("************");
+		System.out.println("Basic Pay: "+basicpay);
+		System.out.println("Deduction: "+deduction);
+		System.out.println("HRA: "+hra);
+		System.out.println("PF: "+pf);
+		System.out.println("Bonus: "+bonus);
+		System.out.println("Total Salary: "+totalsalary);
+	}
+
+	public static void main(String[] args) {
+		Salary s1 = new Salary();
+		int basicpay = s1.inputdata();
+		Hra h1 = new Hra();
+		int hra = h1.calhra(basicpay);
+		int pf =  h1.calpf(basicpay);
+		int bonus = s1.bonus;
+		int deduction = s1.deduction;
+		
+		TotalSalary ts = new TotalSalary();
+		int totalsalary = ts.totsal(basicpay,hra,pf,bonus);
+		ts.display(basicpay,deduction,hra,pf,bonus,totalsalary);
+		
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package Assignments;
+
+public class TotalSalary {
+	int totalsal;
+	
+	public int totsal(){
+		
+	}
+
+	public static void main(String[] args) {
+		Hra 
+		
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package Assignments;
+
+public class TotalSalary {
+	int totalsal;
+	
+	public int totsal(){
+		
+	}
+
+	public static void main(String[] args) {
+		Salary s1 = new Salary();
+		int basicpay = s1.inputdata();
+		Hra h1 = new Hra();
+		int hra = h1.calhra(basicpay);
+		int pf =  h1.calpf(basicpay);
+		int deduction = s1.deduction;
+		System.out.println(deduction);
+		
+
+	}
+
+}

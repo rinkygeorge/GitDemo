@@ -1,0 +1,28 @@
+package Assignments;
+
+public class Hra {
+	
+	int hra;
+	int pf;
+	
+	public int calhra(int basicpay){
+		hra = (int) (basicpay * 0.05);
+		return hra;
+	}
+	public int calpf(int basicpay){
+		return pf = (int) (basicpay * 0.2);
+		
+	}
+
+	public static void main(String[] args) {
+		Salary sal = new Salary();
+		int basicpay = sal.inputdata();
+		Hra h1 = new Hra();
+		 int hra = h1.calhra(basicpay);
+		 System.out.println(hra);
+		h1.calpf(basicpay);
+		
+		
+	}
+
+}
